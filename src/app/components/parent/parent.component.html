@@ -1,0 +1,11 @@
+<p>parent works!</p>
+
+<app-child 
+*ngFor="let item of parentArr" 
+[attName]="item.name" 
+[attAge]="item.age">
+</app-child>
+
+<p *ngIf="parentArr.length === 0">Data not Found :)</p>
+
+
