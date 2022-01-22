@@ -2,13 +2,16 @@
 <app-parent></app-parent>
 <router-outlet></router-outlet> -->
 
-<div style="border: 2px solid red">
+<div style="border: 2px solid red" class="container p-4">
     <h1>{{title}}</h1>
-
+    <fa-icon [icon]="faCoffee"></fa-icon>
 
     <app-navbar></app-navbar>
     
-    <app-profile (newItemEvent)="addRecievedItem($event)"></app-profile>
+    <app-profile (newItemEvent)="addRecievedItem($event)"></app-profile><br/>
+    <app-btn-loading></app-btn-loading>
+
+    <br/>
 
     
 </div>

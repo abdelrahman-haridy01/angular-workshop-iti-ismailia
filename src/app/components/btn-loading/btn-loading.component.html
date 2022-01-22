@@ -1,0 +1,4 @@
+<button class="btn btn-primary {{ isLoading ? 'disabled' : '' }}" (click)="getLoadingTitle()">
+    {{ btnTitle }}
+    <fa-icon *ngIf="isLoading" [icon]="['fas', 'sync']" [spin]="true"></fa-icon>
+</button>
