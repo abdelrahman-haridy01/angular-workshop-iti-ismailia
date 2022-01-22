@@ -1,0 +1,8 @@
+<div style="border: 8px solid blue; padding: 20px">
+    profile works!
+    <label for="item-input">Add an item:</label>
+
+    <input type="text" id="item-input" #newItem>
+
+    <button (click)="addNewItem(newItem.value)">Add to parent's list</button>
+</div>

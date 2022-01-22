@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'doctors-sys';
+
+  addRecievedItem(value) {
+    // console.log(value);
+    this.title = value;
+  }
 }

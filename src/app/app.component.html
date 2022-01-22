@@ -1,3 +1,14 @@
-<h4>Main com</h4>
+<!-- <h4>Main com</h4>
 <app-parent></app-parent>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+
+<div style="border: 2px solid red">
+    <h1>{{title}}</h1>
+
+
+    <app-navbar></app-navbar>
+    
+    <app-profile (newItemEvent)="addRecievedItem($event)"></app-profile>
+
+    
+</div>
