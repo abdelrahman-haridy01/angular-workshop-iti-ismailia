@@ -23,6 +23,11 @@ import {
 import { BtnLoadingComponent } from './components/btn-loading/btn-loading.component';
 import { FormsExpComponent } from './components/forms-exp/forms-exp.component';
 import { AddDoctorComponent } from './components/add-doctor/add-doctor.component';
+import { AngularLifecycleHooksComponent } from './components/angular-lifecycle-hooks/angular-lifecycle-hooks.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { DoctorDetailsComponent } from './pages/doctor-details/doctor-details.component';
 
 
 @NgModule({
@@ -34,7 +39,12 @@ import { AddDoctorComponent } from './components/add-doctor/add-doctor.component
     ProfileComponent,
     BtnLoadingComponent,
     FormsExpComponent,
-    AddDoctorComponent
+    AddDoctorComponent,
+    AngularLifecycleHooksComponent,
+    HomeComponent,
+    LoginComponent,
+    SignupComponent,
+    DoctorDetailsComponent
   ],
   imports: [
     CommonModule,

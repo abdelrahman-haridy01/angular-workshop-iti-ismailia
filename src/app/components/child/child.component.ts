@@ -12,6 +12,7 @@ export class ChildComponent implements OnInit {
 
   @Input() attName = '';
   @Input() attAge = '';
+  @Input() id = '';
 
   constructor() { }
 

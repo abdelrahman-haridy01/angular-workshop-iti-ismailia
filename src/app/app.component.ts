@@ -10,8 +10,15 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 export class AppComponent {
   title = 'doctors-sys';
   faCoffee = faCoffee;
-  
-  constructor(private modalService: NgbModal) {}
+  onChangeVarExample = '';
+  constructor(private modalService: NgbModal) {
+
+
+    // For On Change example hooks
+    // setTimeout(() => {
+    //   this.onChangeVarExample = 'changed..';
+    // }, 5000);
+  }
 
   addRecievedItem(value) {
     // console.log(value);
