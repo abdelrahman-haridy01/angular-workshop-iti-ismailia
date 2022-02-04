@@ -19,7 +19,9 @@ export class AppComponent {
   }
 
   open(content) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+    this.modalService.open(content, 
+      {ariaLabelledBy: 'modal-basic-title'}
+      ).result.then((result) => {
       console.log(result);
     }, (reason) => {
       console.log(reason);

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,8 @@ import {
   faSync
  } from '@fortawesome/free-solid-svg-icons';
 import { BtnLoadingComponent } from './components/btn-loading/btn-loading.component';
+import { FormsExpComponent } from './components/forms-exp/forms-exp.component';
+import { AddDoctorComponent } from './components/add-doctor/add-doctor.component';
 
 
 @NgModule({
@@ -29,12 +32,16 @@ import { BtnLoadingComponent } from './components/btn-loading/btn-loading.compon
     ParentComponent,
     NavbarComponent,
     ProfileComponent,
-    BtnLoadingComponent
+    BtnLoadingComponent,
+    FormsExpComponent,
+    AddDoctorComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule
   ],

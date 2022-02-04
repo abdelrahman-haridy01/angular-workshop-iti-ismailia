@@ -1,0 +1,6 @@
+<p>Please enter your favorite color</p>
+<input class="form-control" type="text" [formControl]="favoriteColorControl"/>
+
+<p>Favorite Color is: {{ favoriteColorControl.value }}</p>
+
+<button class="btn btn-primary" (click)="getData()"> get the data</button>
