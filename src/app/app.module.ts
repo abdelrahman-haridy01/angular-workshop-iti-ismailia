@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { DoctorDetailsComponent } from './pages/doctor-details/doctor-details.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 
 @NgModule({
@@ -44,16 +46,18 @@ import { DoctorDetailsComponent } from './pages/doctor-details/doctor-details.co
     HomeComponent,
     LoginComponent,
     SignupComponent,
-    DoctorDetailsComponent
+    DoctorDetailsComponent,
+    AdminComponent
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

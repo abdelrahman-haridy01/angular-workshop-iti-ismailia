@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DoctorsService } from './../../services/doctors.service';
 
 @Component({
   selector: 'app-parent',
@@ -6,25 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parent.component.scss']
 })
 export class ParentComponent implements OnInit {
-  parentArr = [
-    {
-      id: 0,
-      name: 'Ali',
-      age: 40
-    },{
-      id: 1,
-      name: 'Ahmed',
-      age: 30
-    },
-    {
-      id: 2,
-      name: 'Randa',
-      age: 20
-    }
-  ];
-  constructor() { }
+  parentArr:any = [];
+  constructor(private doctorsService: DoctorsService) { }
 
   ngOnInit(): void {
+    //  this.parentArr = this.doctorsService.getAll();
+
+    this.doctorsService.getAll().subscribe(res => {
+      console.log(res);
+      this.parentArr = res;
+    });
   }
 
 }
